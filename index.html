@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Tookit</title>
+    <style>
+    </style>
 </head>
 <body style="overflow-x: hidden;">
     <navs style="height: 9vh; background-color: rgb(255, 255, 255);" class="navbar fixed-top navbar-expand-sm absolute justify-content-between align-items-cente">
         <div class="container-fluid">
             <a class="nav-link" href="./index.html">
-                <img style="height: 9vh; position: absolute; top: 0; left: 0;" src="./images/logo.png" alt="logo">
+                <img style="height: 9vh; position: absolute; top: 0; left: 0;" class="img-fluid" src="./logo.png" alt="logo">
             </a>
             <button style="position: relative; top: 0.5; right: 0.5rem; align-items: center;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -63,257 +65,235 @@
             </div>
         </div>
     </navs>
-    <div style="padding-top: 75px;" class="container-fluid">
+    <div style="padding-top: 85px;" class="container-fluid">
         <div class="row">
             <div class="col">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active" data-bs-interval="4000">
-                        <img style="border-radius: 20px;" src="./Images/c1.JPG" class="d-block w-100" alt="...">
+                        <img style="border-radius: 20px;" src="./c1.JPG" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 20px;" src="./Images/c2.JPG" class="d-block w-100" alt="...">
+                        <img style="border-radius: 20px;" src="./c2.JPG" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 20px;" src="./Images/c3.JPG" class="d-block w-100" alt="...">
+                        <img style="border-radius: 20px;" src="./c3.JPG" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 20px;" src="./Images/c4.JPG" class="d-block w-100" alt="...">
+                        <img style="border-radius: 20px;" src="./c4.JPG" class="d-block w-100" alt="...">
                       </div>
                       <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 20px;" src="./Images/c5.JPG" class="d-block w-100" alt="...">
+                        <img style="border-radius: 20px;" src="./c5.JPG" class="d-block w-100" alt="...">
                       </div>
                     </div>
                   </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid" style="margin-top: 1%;">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Men's wear</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/m1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/m2.jpg" class="img-fluid" alt="">
-                            </div>
+    <div class="p-2" style="background-color:rgb(255, 255, 255);">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./men.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white;">Men</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./m1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./m2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./m3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./m4.jpg" class="img-fluid" alt="m2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/m3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/m4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./men.html"><p style="color: black; "><mark>Explore All</mark></p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Women wear</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/w1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/w2.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/w3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/w4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./women.html"><p style="color: black;"><mark>Explore All</mark></p></a>
-                            </div>
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./women.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white">Women</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./w1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./w2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./w3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./w4.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Kids wear</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/k1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/k2.jpg" class="img-fluid" alt="">
-                            </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./kids.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white">Kids</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./k1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./k2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./k3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./k4.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/k3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/k4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./kids.html"><p style="color: black;"><mark>Explore All</mark></p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Footwear</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/f1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/f2.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/f3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/f4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./foot.html"><p style="color: black;"><mark>Explore All</mark></p></a>
-                            </div>
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./foot.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white">Footwear</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./f1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./f2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./f3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./f4.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid" style="margin-top: 1%;">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Electronics</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/e1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/e2.jpg" class="img-fluid" alt="">
-                            </div>
+        <div class="container-fluid" style="margin-top: 20px;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./electronics.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white">Electronics</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./e1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./e2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./e3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./e4.jpg" class="img-fluid" alt="m2">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/e3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/e4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./electronics.html"><p style="color: black; "><mark>Explore All</mark></p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Beauty</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/b1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/b2.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/b3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/b4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./beauty.html"><p style="color: black;"><mark>Explore All</mark></p></a>
-                            </div>
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./beauty.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white">Beauty</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./b1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./b2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./b3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./b4.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Kitchen</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/kt1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/kt2.jpg" class="img-fluid" alt="">
-                            </div>
+                <div class="col-sm-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./kitchen.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white">Kitchen</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./kt1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./kt2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./kt3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./kt4.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/kt3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/kt4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./kitchen.html"><p style="color: black;"><mark>Explore All</mark></p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <h3 style="text-align: center; background-color: black; color: white; border-top-right-radius:20px; border-top-left-radius:20px;">Grocery</h3>
-                <div class="card">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/g1.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/g2.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/g3.jpg" class="img-fluid" alt="">
-                            </div>
-                            <div class="col-6 p-2">
-                                <img style="border-radius: 5px;" src="./Images/g4.jpg" class="img-fluid" alt="">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col d-flex justify-content-end">
-                                <a style="text-decoration: none;" href="./grocery.html"><p style="color: black;"><mark>Explore All</mark></p></a>
-                            </div>
+                        <div class="col-6">
+                            <a style="text-decoration: none;" href="./grocery.html">
+                                <div class="card">
+                                    <h3 style="text-align: center; background-color:black; color:white">Grocery</h3>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./g1.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./g2.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <img src="./g3.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                        <div class="col-6">
+                                            <img src="./g4.jpg" class="img-fluid" alt="m1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
