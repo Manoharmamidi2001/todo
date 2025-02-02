@@ -6,6 +6,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        li:hover{
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        li{
+            font-size: large;
+        }
+    </style>
 </head>
 <body style="overflow-x: hidden;">
     <navs style="height: 9vh; background-color: rgb(255, 255, 255);" class="navbar fixed-top navbar-expand-sm absolute justify-content-between align-items-cente">
@@ -63,34 +72,8 @@
             </div>
         </div>
     </navs>
-    <div style="margin-top: 85px;" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
+    <div style="margin-top: 80px;" class="container-fluid">
         <div id="product-list" style="display: flex; flex-wrap:wrap"></div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Yousf/IFB/1242X500_IFB_2.gif" class="img-fluid" alt="">
-            </div>
-        </div>
     </div>
     <div class="row bg-black relative-bottom" style="margin-top: 10px;">
         <div class="d-flex justify-content-center align-item-center" style="height: 4vh;">
@@ -101,92 +84,92 @@
         let products=[
             {
                 id:1,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230421/IV6o/6441b189907deb497af80913/hazel-silver-toned-pots-%26-pans-stainless-steel-pot-with-lid.jpg',
-                title:'Steel basin',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/4/b432d2eMINIM00000008_1.jpg',
+                title:'Face lotion',
                 brand:'Scara',
                 price:999
             },
             {
                 id:2,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230720/3poj/64b83a44a9b42d15c9625cf8/nirlon-silver-pots-%26-pans-stainless-steel-tope-with-lid.jpg',
-                title:'Forza  Kadhai 1.9L',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/f/6f195dbPLUMX00000641_1.jpg',
+                title:'Face cream',
                 brand:'nyka',
                 price:1999
             },
             {
                 id:3,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/qYCB/663e174705ac7d77bb507af2/-473Wx593H-467231983-black-MODEL.jpg',
-                title:'Pan',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/c/8/c87a42dTHECI00000113_0.jpg',
+                title:'Mini discovery set',
                 brand:'kyra',
                 price:999
             },
             {
                 id:4,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240730/3K2d/66a801671d763220fa4b7bd8/-473Wx593H-700241504-brown-MODEL.jpg',
-                title:'Spinel Rutgers Bamboo',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/a/2aa71cbNYCETA0000010_1.jpg',
+                title:'power essence',
                 brand:'kyra',
                 price:1999
             },
             {
                 id:5,
-                url:'https://assets.ajio.com/medias/sys_master/root/20241104/kYFs/6728fa86f9b8ef490b01a8f6/-473Wx593H-700702934-clear-MODEL.jpg',
-                title:'Saucepan with Handle',
-                brand:'UMAI',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/4/34f0fa0THECI00000026.jpg',
+                title:'Face lotion',
+                brand:'nika',
                 price:999
             },
             {
                 id:6,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240422/ZkSj/662692fb05ac7d77bb1df7d7/-473Wx593H-467270049-silver-MODEL.jpg',
-                title:'Lid Pressure Cooker - 4.5 Ltrs Senior',
-                brand:'VINOD',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/9/4/940d7bcNYLOPROF00002_1.jpg',
+                title:'Haircare',
+                brand:'Lyka',
                 price:1999
             },
             {
                 id:7,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240405/vLcW/6610263d05ac7d77bbf95d77/-473Wx593H-467232578-grey-MODEL.jpg',
-                title:'Pan set',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/3/839288cSCHWA00000039_2511231.jpg',
+                title:'Hair wax',
                 brand:'insa',
                 price:999
             },
             {
                 id:8,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240822/HDRo/66c713946f60443f311f118d/-473Wx593H-700310690-blue-MODEL.jpg',
-                title:'Oven plot',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/a/7/a7f9cef290011521011_1711231.jpg',
+                title:'Oil seram',
                 brand:'Swis',
                 price:1999
             },
             {
                 id:9,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240715/l3KC/66954e9f6f60443f313e75ed/-473Wx593H-700191306-red-MODEL.jpg',
-                title:'Alluminium pans',
-                brand:'Syss',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/2/b2e2a976923700970449_1.jpg',
+                title:'Multiface platee',
+                brand:'REALME',
                 price:999
             },
             {
                 id:10,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/x6jP/663e173d16fd2c6e6afaeae0/-473Wx593H-467241709-black-MODEL.jpg',
-                title:'Forza Pre-Seasoned Pan 2.5L',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/e/1e29feeBEBOD00000076_1.jpg',
+                title:'Shampoo',
                 brand:'Kyra',
                 price:1999
             },
             {
                 id:11,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/ZCZg/663e170d16fd2c6e6afae460/-473Wx593H-467210333-grey-MODEL.jpg',
-                title:'Granite Non-Stick Dosa Tawa',
-                brand:'Prestige',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/7/17def8f27441_H-8901030971921.jpg',
+                title:'face cream',
+                brand:'Vasciline',
                 price:999
             },
             {
                 id:12,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230803/Z0O0/64cb5a4ca9b42d15c988c1c5/-473Wx593H-466027668-brown-MODEL.jpg',
-                title:'Wooden holder',
+                url:'https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/7/37e27d3COLGA00000054_0.jpg',
+                title:'Visible white',
                 brand:'Colgate',
                 price:1999
             }
         ];
         function viewProduct(productId) {
             let selectedProduct = products.find(p => p.id === productId);
-            localStorage.setItem('source', 'kitchen');
+            localStorage.setItem('source', 'men-beauty');
             localStorage.setItem('selectedProduct', JSON.stringify(selectedProduct));
             window.location.href = 'products.html'; // Redirect to product details page
         }

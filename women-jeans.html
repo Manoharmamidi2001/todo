@@ -6,6 +6,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        li:hover{
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        li{
+            font-size: large;
+        }
+    </style>
 </head>
 <body style="overflow-x: hidden;">
     <navs style="height: 9vh; background-color: rgb(255, 255, 255);" class="navbar fixed-top navbar-expand-sm absolute justify-content-between align-items-cente">
@@ -63,36 +72,10 @@
             </div>
         </div>
     </navs>
-    <div style="margin-top: 85px;" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
+    <div style="margin-top: 80px;" class="container-fluid">
         <div id="product-list" style="display: flex; flex-wrap:wrap"></div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Yousf/IFB/1242X500_IFB_2.gif" class="img-fluid" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="row bg-black relative-bottom" style="margin-top: 10px;">
+    <div class="row bg-black relative-bottom" style="margin-top: 5px;">
         <div class="d-flex justify-content-center align-item-center" style="height: 4vh;">
             <p style="color: white;">©Manohar Mamidi 2110</p>
         </div>
@@ -101,92 +84,134 @@
         let products=[
             {
                 id:1,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230421/IV6o/6441b189907deb497af80913/hazel-silver-toned-pots-%26-pans-stainless-steel-pot-with-lid.jpg',
-                title:'Steel basin',
-                brand:'Scara',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241218/8nu9/6761e2cbc148fa1b3045f1b4/-473Wx593H-700939309-navy-MODEL.jpg',
+                title:'Women Relaxed Jeans',
+                brand:'ARADHNA',
+                price:639
             },
             {
                 id:2,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230720/3poj/64b83a44a9b42d15c9625cf8/nirlon-silver-pots-%26-pans-stainless-steel-tope-with-lid.jpg',
-                title:'Forza  Kadhai 1.9L',
-                brand:'nyka',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20250120/rW9v/678e34030431850e0daa9330/-473Wx593H-469692573-indigo-MODEL.jpg',
+                title:'Women 724 Lightly Fit Jeans',
+                brand:'LEVIS',
+                price:699
             },
             {
                 id:3,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/qYCB/663e174705ac7d77bb507af2/-473Wx593H-467231983-black-MODEL.jpg',
-                title:'Pan',
-                brand:'kyra',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241218/guGN/67628ef30f47f80c87094d04/-473Wx593H-700940720-blue-MODEL.jpg',
+                title:'Women Heavily Relaxed Jeans',
+                brand:'BIKASAAB',
+                price:1400
             },
             {
                 id:4,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240730/3K2d/66a801671d763220fa4b7bd8/-473Wx593H-700241504-brown-MODEL.jpg',
-                title:'Spinel Rutgers Bamboo',
-                brand:'kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241218/RMuS/6762b8ce0f47f80c8709bb94/-473Wx593H-700940937-black-MODEL.jpg',
+                title:'Women High-Rise Baggy Jeans',
+                brand:'AVAASA MIX MATCH',
+                price:1862
             },
             {
                 id:5,
-                url:'https://assets.ajio.com/medias/sys_master/root/20241104/kYFs/6728fa86f9b8ef490b01a8f6/-473Wx593H-700702934-clear-MODEL.jpg',
-                title:'Saucepan with Handle',
-                brand:'UMAI',
+                url:'https://assets.ajio.com/medias/sys_master/root/20240713/PnzV/6691b09a6f60443f31ff9086/-473Wx593H-700188607-blue-MODEL.jpg',
+                title:'Women Mid-Rise Slim Fit Jeans',
+                brand:'ONLY',
                 price:999
             },
             {
                 id:6,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240422/ZkSj/662692fb05ac7d77bb1df7d7/-473Wx593H-467270049-silver-MODEL.jpg',
-                title:'Lid Pressure Cooker - 4.5 Ltrs Senior',
-                brand:'VINOD',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241120/CSys/673d8bd4c148fa1b30d85588/-473Wx593H-700309624-blue-MODEL.jpg',
+                title:'Women Lightly Fit Jeans',
+                brand:'NUCOUTHS',
+                price:4499
             },
             {
                 id:7,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240405/vLcW/6610263d05ac7d77bbf95d77/-473Wx593H-467232578-grey-MODEL.jpg',
-                title:'Pan set',
-                brand:'insa',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240804/oJ99/66afab0d6f60443f31e8ca2d/-473Wx593H-700256289-black-MODEL.jpg',
+                title:'Women High-Rise Fit Jeans',
+                brand:'DOLCE CRUDO',
+                price:1123
             },
             {
                 id:8,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240822/HDRo/66c713946f60443f311f118d/-473Wx593H-700310690-blue-MODEL.jpg',
-                title:'Oven plot',
-                brand:'Swis',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240613/r93F/666c76456f60443f313d97e3/-473Wx593H-443047950-grey-MODEL.jpg',
+                title:'Women jeans',
+                brand:'LEE COOPER',
+                price:549
             },
             {
                 id:9,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240715/l3KC/66954e9f6f60443f313e75ed/-473Wx593H-700191306-red-MODEL.jpg',
-                title:'Alluminium pans',
-                brand:'Syss',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20250107/7Z4I/677d565e0431850e0d89410e/-473Wx593H-700940369-navy-MODEL.jpg',
+                title:'Women Lightly Washed Jeans',
+                brand:'MEVAN',
+                price:479
             },
             {
                 id:10,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/x6jP/663e173d16fd2c6e6afaeae0/-473Wx593H-467241709-black-MODEL.jpg',
-                title:'Forza Pre-Seasoned Pan 2.5L',
-                brand:'Kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20230926/Ctlh/65130810ddf7791519034cac/-473Wx593H-466638602-grey-MODEL.jpg',
+                title:'Lightly Washed Flap Pockets',
+                brand:'KOTTY',
+                price:1400
             },
             {
                 id:11,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/ZCZg/663e170d16fd2c6e6afae460/-473Wx593H-467210333-grey-MODEL.jpg',
-                title:'Granite Non-Stick Dosa Tawa',
-                brand:'Prestige',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241218/cwDm/6762b8770f47f80c8709af06/-473Wx593H-700940333-blue-MODEL.jpg',
+                title:'Women Embroidered jean',
+                brand:'STYLEELITE',
+                price:315
             },
             {
                 id:12,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230803/Z0O0/64cb5a4ca9b42d15c988c1c5/-473Wx593H-466027668-brown-MODEL.jpg',
-                title:'Wooden holder',
-                brand:'Colgate',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240604/A3OS/665f221916fd2c6e6a4b5443/-473Wx593H-443047948-grey-MODEL.jpg',
+                title:'Lee cooper',
+                brand:'BIKASAAB',
+                price:3000
+            },
+            {
+                id:13,
+                url:'https://assets.ajio.com/medias/sys_master/root/20220927/1dFm/63332b2df997dd1f8d209722/-473Wx593H-469278591-blue-MODEL.jpg',
+                title:'Heavily Distressed Washed Straight Jeans',
+                brand:'ONLY',
+                price:500
+            },
+            {
+                id:14,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240604/5lME/665e232805ac7d77bb99a038/-473Wx593H-700035618-blue-MODEL2.jpg',
+                title:'Women High-Rise Wide Leg Jeans',
+                brand:'COSMIC',
+                price:599
+            },
+            {
+                id:15,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240102/iQiO/6593e717afa4cf41f5fb5e8f/-473Wx593H-466936983-black-MODEL.jpg',
+                title:'Women High-Rise Skinny Fit Jeans',
+                brand:'MISS CHASE',
+                price:1000
+            },
+            {
+                id:16,
+                url:'https://assets.ajio.com/medias/sys_master/root/20230426/7qu5/644939c0d55b7d0c638074ee/-473Wx593H-469468581-lightblue-MODEL.jpg',
+                title:'Lightly Washed Skinny Fit Jeans',
+                brand:'ZIKARAA',
+                price:1300
+            },
+            {
+                id:17,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241029/QuZH/67203844f9b8ef490bed28f4/-473Wx593H-700417396-navy-MODEL.jpg',
+                title:'Women Low Rise Bootcut Jeans',
+                brand:'AHIKA',
+                price:2000
+            },
+            {
+                id:18,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240618/7eyD/667192e61d763220fac91428/-473Wx593H-443047952-grey-MODEL.jpg',
+                title:'Women High-Rise Flared Jeans',
+                brand:'DISHWA FASHION',
+                price:700
             }
         ];
         function viewProduct(productId) {
             let selectedProduct = products.find(p => p.id === productId);
-            localStorage.setItem('source', 'kitchen');
+            localStorage.setItem('source', 'women-jeans');
             localStorage.setItem('selectedProduct', JSON.stringify(selectedProduct));
             window.location.href = 'products.html'; // Redirect to product details page
         }

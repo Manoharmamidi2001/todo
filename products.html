@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Shopping Cart</title>
+    <title>Product Details</title>
 </head>
 <body>
     <navs style="height: 9vh; background-color: rgb(255, 255, 255);" class="navbar fixed-top navbar-expand-sm absolute justify-content-between align-items-cente">
@@ -64,85 +64,60 @@
         </div>
     </navs>
     <div class="container mt-5">
-        <h2 style="margin-top: 80px;" class="mb-4">🛒 Your Shopping Cart</h2>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Title</th>
-                    <th>Brand</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody id="cartTableBody">
-                <!-- Cart items will be inserted here dynamically -->
-            </tbody>
-        </table>
-        <h3 class="text-end">Total Amount: ₹<span id="totalAmount">0</span></h3>
-        <button class="btn btn-success">Proceed to Checkout</button>
+        <div style="margin-top: 80px;" class="row">
+            <!-- Product Image Section -->
+            <div class="col-md-6">
+                <img id="productImage" class="img-fluid" alt="Product Image">
+            </div>
+            <!-- Product Details Section -->
+            <div class="col-md-6">
+                <h2 id="productTitle"></h2>
+                <h4 id="productBrand"></h4>
+                <h3 id="productPrice" class="text-danger"></h3>
+                <button class="btn btn-primary" onclick="addToCart()">Add to Cart</button>
+                <button class="btn btn-success">Buy Now</button>
+            </div>
+        </div>
     </div>
 
     <script>
-        function loadCart() {
+        function displayProductDetails() {
+            let product = JSON.parse(localStorage.getItem('selectedProduct'));
+
+            if (product) {
+                document.getElementById('productImage').src = product.url;
+                document.getElementById('productTitle').innerText = product.title;
+                document.getElementById('productBrand').innerText = "Brand: " + product.brand;
+                document.getElementById('productPrice').innerText = "₹" + product.price;
+            } else {
+                alert("No product selected!");
+                window.location.href = 'index.html'; // Redirect if no product found
+            }
+        }
+
+        function addToCart() {
+            let product = JSON.parse(localStorage.getItem('selectedProduct'));
             let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            let cartTableBody = document.getElementById('cartTableBody');
-            let totalAmount = 0;
-        
-            cartTableBody.innerHTML = ''; // Clear existing cart content
-        
-            if (cart.length === 0) {
-                cartTableBody.innerHTML = '<tr><td colspan="7" class="text-center">Your cart is empty!</td></tr>';
-                return;
+            
+            // Add a unique identifier based on category (source)
+            product.source = localStorage.getItem('source') || 'general'; // Set a source like 'fruits', 'audio', etc.
+            
+            // Check if product already exists in the cart
+            let existingProduct = cart.find(item => item.id === product.id && item.source === product.source);
+            
+            if (existingProduct) {
+                existingProduct.quantity += 1; // Increment quantity
+            } else {
+                product.quantity = 1; // First time adding
+                cart.push(product);
             }
         
-            cart.forEach((item, index) => {
-                let itemTotal = item.price * item.quantity;
-                totalAmount += itemTotal;
-        
-                cartTableBody.innerHTML += `
-                    <tr>
-                        <td><img src="${item.url}" width="50"></td>
-                        <td>${item.title}</td>
-                        <td>${item.brand}</td>
-                        <td>₹${item.price}</td>
-                        <td>
-                            <button class="btn btn-sm btn-outline-secondary" onclick="changeQuantity(${index}, -1)">-</button>
-                            ${item.quantity}
-                            <button class="btn btn-sm btn-outline-secondary" onclick="changeQuantity(${index}, 1)">+</button>
-                        </td>
-                        <td>₹${itemTotal}</td>
-                        <td><button class="btn btn-sm btn-danger" onclick="removeFromCart(${index})">Remove</button></td>
-                    </tr>
-                `;
-            });
-        
-            document.getElementById('totalAmount').innerText = totalAmount;
-        }
-        
-
-        function changeQuantity(index, change) {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart[index].quantity += change;
-
-            if (cart[index].quantity <= 0) {
-                cart.splice(index, 1); // Remove item if quantity is 0
-            }
-
             localStorage.setItem('cart', JSON.stringify(cart));
-            loadCart(); // Refresh cart display
+            alert("Product added to cart!");
         }
+        
 
-        function removeFromCart(index) {
-            let cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.splice(index, 1); // Remove item from cart
-            localStorage.setItem('cart', JSON.stringify(cart));
-            loadCart(); // Refresh cart display
-        }
-
-        window.onload = loadCart;
+        window.onload = displayProductDetails;
     </script>
 </body>
 </html>

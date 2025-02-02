@@ -6,6 +6,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        li:hover{
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        li{
+            font-size: large;
+        }
+    </style>
 </head>
 <body style="overflow-x: hidden;">
     <navs style="height: 9vh; background-color: rgb(255, 255, 255);" class="navbar fixed-top navbar-expand-sm absolute justify-content-between align-items-cente">
@@ -63,36 +72,10 @@
             </div>
         </div>
     </navs>
-    <div style="margin-top: 85px;" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
+    <div style="margin-top: 80px;" class="container-fluid">
         <div id="product-list" style="display: flex; flex-wrap:wrap"></div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Yousf/IFB/1242X500_IFB_2.gif" class="img-fluid" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="row bg-black relative-bottom" style="margin-top: 10px;">
+    <div class="row bg-black relative-bottom" style="margin-top: 5px;">
         <div class="d-flex justify-content-center align-item-center" style="height: 4vh;">
             <p style="color: white;">©Manohar Mamidi 2110</p>
         </div>
@@ -101,92 +84,134 @@
         let products=[
             {
                 id:1,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230421/IV6o/6441b189907deb497af80913/hazel-silver-toned-pots-%26-pans-stainless-steel-pot-with-lid.jpg',
-                title:'Steel basin',
-                brand:'Scara',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20250128/M9kS/6798de3d2960820c4942a734/-473Wx593H-701058611-green-MODEL.jpg',
+                title:'Women V-Neck Anarkali Kurta',
+                brand:'ARADHNA',
+                price:639
             },
             {
                 id:2,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230720/3poj/64b83a44a9b42d15c9625cf8/nirlon-silver-pots-%26-pans-stainless-steel-tope-with-lid.jpg',
-                title:'Forza  Kadhai 1.9L',
-                brand:'nyka',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241106/jxx1/672a9ad9260f9c41e8c1d251/-473Wx593H-700705242-black-MODEL.jpg',
+                title:'Women Flared Kurta',
+                brand:'WHATNOT STYLE',
+                price:699
             },
             {
                 id:3,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/qYCB/663e174705ac7d77bb507af2/-473Wx593H-467231983-black-MODEL.jpg',
-                title:'Pan',
-                brand:'kyra',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20250110/Xojp/6780e112663dbe1c5fcbc3d6/-473Wx593H-701037421-violet-MODEL.jpg',
+                title:'Women Yoke Kurta',
+                brand:'BIKASAAB',
+                price:1400
             },
             {
                 id:4,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240730/3K2d/66a801671d763220fa4b7bd8/-473Wx593H-700241504-brown-MODEL.jpg',
-                title:'Spinel Rutgers Bamboo',
-                brand:'kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241025/ho4V/671b2d30260f9c41e89cb7cf/-473Wx593H-443280109-beige-MODEL.jpg',
+                title:'Women Floral Print Kurta',
+                brand:'AVAASA MIX MATCH',
+                price:1862
             },
             {
                 id:5,
-                url:'https://assets.ajio.com/medias/sys_master/root/20241104/kYFs/6728fa86f9b8ef490b01a8f6/-473Wx593H-700702934-clear-MODEL.jpg',
-                title:'Saucepan with Handle',
-                brand:'UMAI',
+                url:'https://assets.ajio.com/medias/sys_master/root/20241216/a4Su/6760206ac148fa1b303f4765/-473Wx593H-443064315-navy-MODEL.jpg',
+                title:'Women Straight Kurta',
+                brand:'SATRANI',
                 price:999
             },
             {
                 id:6,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240422/ZkSj/662692fb05ac7d77bb1df7d7/-473Wx593H-467270049-silver-MODEL.jpg',
-                title:'Lid Pressure Cooker - 4.5 Ltrs Senior',
-                brand:'VINOD',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240429/LgNP/662fd48616fd2c6e6adc292f/-473Wx593H-467264369-green-MODEL.jpg',
+                title:'Women Floral Print Kurta',
+                brand:'MAAESA',
+                price:4499
             },
             {
                 id:7,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240405/vLcW/6610263d05ac7d77bbf95d77/-473Wx593H-467232578-grey-MODEL.jpg',
-                title:'Pan set',
-                brand:'insa',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240806/BV6D/66b23fb11d763220fa636167/-473Wx593H-443050289-wine-MODEL.jpg',
+                title:'Women Floral Print Kurta',
+                brand:'AVAASA MIX MATCH',
+                price:1123
             },
             {
                 id:8,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240822/HDRo/66c713946f60443f311f118d/-473Wx593H-700310690-blue-MODEL.jpg',
-                title:'Oven plot',
-                brand:'Swis',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240905/7oLe/66d996ba1d763220fac684d5/-473Wx593H-443059292-pink-MODEL.jpg',
+                title:'Women Printed Straight Kurta',
+                brand:'AVAASA MIX',
+                price:549
             },
             {
                 id:9,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240715/l3KC/66954e9f6f60443f313e75ed/-473Wx593H-700191306-red-MODEL.jpg',
-                title:'Alluminium pans',
-                brand:'Syss',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241126/G61a/6745e0610f47f80c87acf1f5/-473Wx593H-700798862-turquoise-MODEL.jpg',
+                title:'Women Flared Kurta',
+                brand:'ASHLEE',
+                price:479
             },
             {
                 id:10,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/x6jP/663e173d16fd2c6e6afaeae0/-473Wx593H-467241709-black-MODEL.jpg',
-                title:'Forza Pre-Seasoned Pan 2.5L',
-                brand:'Kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20250110/jn9q/6780e0c40431850e0d911763/-473Wx593H-701037421-blue-MODEL.jpg',
+                title:'Women Yoke Flared Kurta',
+                brand:'GAJGAJRA',
+                price:1400
             },
             {
                 id:11,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/ZCZg/663e170d16fd2c6e6afae460/-473Wx593H-467210333-grey-MODEL.jpg',
-                title:'Granite Non-Stick Dosa Tawa',
-                brand:'Prestige',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240827/CmjZ/66cd744e6f60443f312d9ac5/-473Wx593H-443055749-navy-MODEL.jpg',
+                title:'Women Embroidered Kurta',
+                brand:'STYLEELITE',
+                price:315
             },
             {
                 id:12,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230803/Z0O0/64cb5a4ca9b42d15c988c1c5/-473Wx593H-466027668-brown-MODEL.jpg',
-                title:'Wooden holder',
-                brand:'Colgate',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20250110/ExLk/6780e0560431850e0d910b09/-473Wx593H-701037421-peach-MODEL.jpg',
+                title:'Women Embroidered Kurta',
+                brand:'BIKASAAB',
+                price:3000
+            },
+            {
+                id:13,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241129/xw7y/6749d8b80f47f80c87bb4ee9/-473Wx593H-700826007-multi-MODEL.jpg',
+                title:'Women Floral A-line Kurta',
+                brand:'DAEVISH',
+                price:500
+            },
+            {
+                id:14,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240911/lkK5/66e150766f60443f316df9d0/-473Wx593H-443059289-indigo-MODEL.jpg',
+                title:'Women Floral Print Kurta',
+                brand:'KHUSHI CREATION',
+                price:599
+            },
+            {
+                id:15,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241105/RBpE/672a1013260f9c41e8c0230f/-473Wx593H-443282582-lavender-MODEL.jpg',
+                title:'Women Banarasi Silk Kurta',
+                brand:'STYLEELITE',
+                price:1000
+            },
+            {
+                id:16,
+                url:'https://assets.ajio.com/medias/sys_master/root/20250122/FXGa/67910823663dbe1c5ff24831/-473Wx593H-701087324-pink-MODEL.jpg',
+                title:'Women Embroidery Kurta',
+                brand:'ZIKARAA',
+                price:1300
+            },
+            {
+                id:17,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240504/DAMG/66358d5216fd2c6e6ae6e1fd/-473Wx593H-467298831-green-MODEL.jpg',
+                title:'Women Embroidered Kurta',
+                brand:'AHIKA',
+                price:2000
+            },
+            {
+                id:18,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240217/Ps4B/65d088ec05ac7d77bb607c88/-473Wx593H-467073725-yellow-MODEL.jpg',
+                title:'Women Embroidered Kurta',
+                brand:'DISHWA FASHION',
+                price:700
             }
         ];
         function viewProduct(productId) {
             let selectedProduct = products.find(p => p.id === productId);
-            localStorage.setItem('source', 'kitchen');
+            localStorage.setItem('source', 'women-kurtas');
             localStorage.setItem('selectedProduct', JSON.stringify(selectedProduct));
             window.location.href = 'products.html'; // Redirect to product details page
         }

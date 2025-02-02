@@ -63,34 +63,8 @@
             </div>
         </div>
     </navs>
-    <div style="margin-top: 85px;" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
+    <div style="margin-top: 70px;" class="container-fluid">
         <div id="product-list" style="display: flex; flex-wrap:wrap"></div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Yousf/IFB/1242X500_IFB_2.gif" class="img-fluid" alt="">
-            </div>
-        </div>
     </div>
     <div class="row bg-black relative-bottom" style="margin-top: 10px;">
         <div class="d-flex justify-content-center align-item-center" style="height: 4vh;">
@@ -101,92 +75,134 @@
         let products=[
             {
                 id:1,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230421/IV6o/6441b189907deb497af80913/hazel-silver-toned-pots-%26-pans-stainless-steel-pot-with-lid.jpg',
-                title:'Steel basin',
-                brand:'Scara',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240710/rpfA/668e87546f60443f31d69ec1/-473Wx593H-443047871-white-MODEL3.jpg',
+                title:'Boys Regular Fit Shirt',
+                brand:'YB DNMX',
+                price:299
             },
             {
                 id:2,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230720/3poj/64b83a44a9b42d15c9625cf8/nirlon-silver-pots-%26-pans-stainless-steel-tope-with-lid.jpg',
-                title:'Forza  Kadhai 1.9L',
-                brand:'nyka',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241225/QQ9C/676b1038c148fa1b305e585b/-473Wx593H-700974994-wine-MODEL3.jpg',
+                title:'Boy Shirt with Band Collar',
+                brand:'MAMERU',
+                price:560
             },
             {
                 id:3,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/qYCB/663e174705ac7d77bb507af2/-473Wx593H-467231983-black-MODEL.jpg',
-                title:'Pan',
-                brand:'kyra',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240611/UC57/6668b2a416fd2c6e6a9d3bea/-473Wx593H-443047872-navy-MODEL.jpg',
+                title:'Boys Regular Fit Shirt Pocket',
+                brand:'YB DNMX',
+                price:1400
             },
             {
                 id:4,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240730/3K2d/66a801671d763220fa4b7bd8/-473Wx593H-700241504-brown-MODEL.jpg',
-                title:'Spinel Rutgers Bamboo',
-                brand:'kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241225/oHcs/676b5dc10f47f80c87203cbf/-473Wx593H-700974994-blue-MODEL.jpg',
+                title:'Boy Shirt with Band Collar',
+                brand:'THOILLLING',
+                price:1862
             },
             {
                 id:5,
-                url:'https://assets.ajio.com/medias/sys_master/root/20241104/kYFs/6728fa86f9b8ef490b01a8f6/-473Wx593H-700702934-clear-MODEL.jpg',
-                title:'Saucepan with Handle',
-                brand:'UMAI',
+                url:'https://assets.ajio.com/medias/sys_master/root/20230731/89ft/64c7f269eebac147fc980e2b/-473Wx593H-466403015-green-MODEL.jpg',
+                title:'Spread Collar Shirt Pockets',
+                brand:'LEE COOPER',
                 price:999
             },
             {
                 id:6,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240422/ZkSj/662692fb05ac7d77bb1df7d7/-473Wx593H-467270049-silver-MODEL.jpg',
-                title:'Lid Pressure Cooker - 4.5 Ltrs Senior',
-                brand:'VINOD',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240528/HEfB/6655d93616fd2c6e6a320cb2/-473Wx593H-443047872-mustard-MODEL.jpg',
+                title:'Boys Regular Fit Shirt Pocket',
+                brand:'THE INDIAN GARAGE CO',
+                price:4499
             },
             {
                 id:7,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240405/vLcW/6610263d05ac7d77bbf95d77/-473Wx593H-467232578-grey-MODEL.jpg',
-                title:'Pan set',
-                brand:'insa',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241001/3BTw/66fbef19f9b8ef490b8b0de5/-473Wx593H-442658935-multi-MODEL.jpg',
+                title:'Boys Checked Regular Pocket',
+                brand:'TRAMPOLINE',
+                price:1123
             },
             {
                 id:8,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240822/HDRo/66c713946f60443f311f118d/-473Wx593H-700310690-blue-MODEL.jpg',
-                title:'Oven plot',
-                brand:'Swis',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240513/Spxz/66420f4f05ac7d77bb56e7cb/kb-team-spirit-green-regular-boys-printed-regular-fit-shirt-with-patch-pocket.jpg',
+                title:'Boys Printed Regular Pocket',
+                brand:'THOILLLING',
+                price:549
             },
             {
                 id:9,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240715/l3KC/66954e9f6f60443f313e75ed/-473Wx593H-700191306-red-MODEL.jpg',
-                title:'Alluminium pans',
-                brand:'Syss',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240805/Zjcw/66b0dc536f60443f31ec03b3/-473Wx593H-442656772-black-MODEL3.jpg',
+                title:'Boys Typographic Boxy Shirt',
+                brand:'YOUSTA',
+                price:479
             },
             {
                 id:10,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/x6jP/663e173d16fd2c6e6afaeae0/-473Wx593H-467241709-black-MODEL.jpg',
-                title:'Forza Pre-Seasoned Pan 2.5L',
-                brand:'Kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241103/BS96/67277ca2f9b8ef490bfaf88d/-473Wx593H-700681067-multi-MODEL.jpg',
+                title:'Men Stripes Regular Fit Shirt',
+                brand:'LILPICKS',
+                price:1025
             },
             {
                 id:11,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/ZCZg/663e170d16fd2c6e6afae460/-473Wx593H-467210333-grey-MODEL.jpg',
-                title:'Granite Non-Stick Dosa Tawa',
-                brand:'Prestige',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241215/rDAx/675eecca0f47f80c87fd5e16/-473Wx593H-700207052-green-MODEL.jpg',
+                title:'Men Regular Fit Shirt Collar',
+                brand:'SHIRALI KIDS',
+                price:315
             },
             {
                 id:12,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230803/Z0O0/64cb5a4ca9b42d15c988c1c5/-473Wx593H-466027668-brown-MODEL.jpg',
-                title:'Wooden holder',
-                brand:'Colgate',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240927/lQQt/66f6de09f9b8ef490b761307/-473Wx593H-443052624-darkgreen-MODEL.jpg',
+                title:'Boys Self-Stripe Hooded Shirt',
+                brand:'TOONYPORT',
+                price:900
+            },
+            {
+                id:13,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240311/Wykz/65ef09bc05ac7d77bba8fb44/-473Wx593H-467155083-blue-MODEL.jpg',
+                title:'Leaf Regular Fit Shirt Collar',
+                brand:'TIOR',
+                price:500
+            },
+            {
+                id:14,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241029/CnGU/6720b9f6f9b8ef490bee5845/-473Wx593H-700670149-multi-MODEL.jpg',
+                title:'Boy Regular Fit Print Shirt',
+                brand:'LILPICKS',
+                price:599
+            },
+            {
+                id:15,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240821/woz7/66c5e5d41d763220fa8b3f97/-473Wx593H-442588666-multi-MODEL.jpg',
+                title:'Boys Checked Slim Fit T-Shirt',
+                brand:'POINT ',
+                price:1000
+            },
+            {
+                id:16,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241231/yqzF/677393f90f47f80c872da838/-473Wx593H-700974994-teal-MODEL.jpg',
+                title:'Boys Slim Fit Shirt with Collar',
+                brand:'ADIDAS KIDS',
+                price:1300
+            },
+            {
+                id:17,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241225/KyUD/676b5df8c148fa1b305e8a78/-473Wx593H-700974994-olive-MODEL.jpg',
+                title:'Boy Shirt with Band Collar',
+                brand:'ADIDAS KIDS',
+                price:2000
+            },
+            {
+                id:18,
+                url:'https://assets.ajio.com/medias/sys_master/root/20230731/0QG2/64c7f366eebac147fc982c1c/-473Wx593H-466403017-beige-MODEL.jpg',
+                title:'Spread Collar Shirt Pockets',
+                brand:'ADIDAS KIDS',
+                price:700
             }
         ];
         function viewProduct(productId) {
             let selectedProduct = products.find(p => p.id === productId);
-            localStorage.setItem('source', 'kitchen');
+            localStorage.setItem('source', 'kids-shirts');
             localStorage.setItem('selectedProduct', JSON.stringify(selectedProduct));
             window.location.href = 'products.html'; // Redirect to product details page
         }

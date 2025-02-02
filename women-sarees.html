@@ -6,6 +6,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        li:hover{
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        li{
+            font-size: large;
+        }
+    </style>
 </head>
 <body style="overflow-x: hidden;">
     <navs style="height: 9vh; background-color: rgb(255, 255, 255);" class="navbar fixed-top navbar-expand-sm absolute justify-content-between align-items-cente">
@@ -63,36 +72,10 @@
             </div>
         </div>
     </navs>
-    <div style="margin-top: 85px;" class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-1.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-2.jpg" class="d-block w-100" alt="...">
-                      </div>
-                      <div class="carousel-item" data-bs-interval="4000">
-                        <img style="border-radius: 5px;" src="./kt-c-3.jpg" class="d-block w-100" alt="...">
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
+    <div style="margin-top: 80px;" class="container-fluid">
         <div id="product-list" style="display: flex; flex-wrap:wrap"></div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col d-flex justify-content-center">
-                <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Yousf/IFB/1242X500_IFB_2.gif" class="img-fluid" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="row bg-black relative-bottom" style="margin-top: 10px;">
+    <div class="row bg-black relative-bottom" style="margin-top: 5px;">
         <div class="d-flex justify-content-center align-item-center" style="height: 4vh;">
             <p style="color: white;">©Manohar Mamidi 2110</p>
         </div>
@@ -101,92 +84,134 @@
         let products=[
             {
                 id:1,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230421/IV6o/6441b189907deb497af80913/hazel-silver-toned-pots-%26-pans-stainless-steel-pot-with-lid.jpg',
-                title:'Steel basin',
-                brand:'Scara',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240228/7GCi/65def02d05ac7d77bb82d30f/-473Wx593H-467117117-black-MODEL.jpg',
+                title:'Women Saree with Blouse',
+                brand:'IKON FASHION',
+                price:299
             },
             {
                 id:2,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230720/3poj/64b83a44a9b42d15c9625cf8/nirlon-silver-pots-%26-pans-stainless-steel-tope-with-lid.jpg',
-                title:'Forza  Kadhai 1.9L',
-                brand:'nyka',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240816/S8aZ/66bed4831d763220fa7e0d95/-473Wx593H-700292082-offwhite-MODEL.jpg',
+                title:'Women Printed Saree Border',
+                brand:'PEACHMODE',
+                price:560
             },
             {
                 id:3,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/qYCB/663e174705ac7d77bb507af2/-473Wx593H-467231983-black-MODEL.jpg',
-                title:'Pan',
-                brand:'kyra',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240816/bKdx/66bf7d796f60443f310ff863/-473Wx593H-700294130-blue-MODEL.jpg',
+                title:'Women Print Saree Border',
+                brand:'PEACHMODE',
+                price:1400
             },
             {
                 id:4,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240730/3K2d/66a801671d763220fa4b7bd8/-473Wx593H-700241504-brown-MODEL.jpg',
-                title:'Spinel Rutgers Bamboo',
-                brand:'kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240731/WwNh/66aa67621d763220fa51e817/-473Wx593H-700158156-rust-MODEL.jpg',
+                title:'Women Banarasi Saree Motifs',
+                brand:'ZIKARAA',
+                price:1862
             },
             {
                 id:5,
-                url:'https://assets.ajio.com/medias/sys_master/root/20241104/kYFs/6728fa86f9b8ef490b01a8f6/-473Wx593H-700702934-clear-MODEL.jpg',
-                title:'Saucepan with Handle',
-                brand:'UMAI',
+                url:'https://assets.ajio.com/medias/sys_master/root/20250103/hGGh/6776eab50f47f80c87325636/-473Wx593H-700889071-violet-MODEL.jpg',
+                title:'Women Satrani Chiffon Saree',
+                brand:'SATRANI',
                 price:999
             },
             {
                 id:6,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240422/ZkSj/662692fb05ac7d77bb1df7d7/-473Wx593H-467270049-silver-MODEL.jpg',
-                title:'Lid Pressure Cooker - 4.5 Ltrs Senior',
-                brand:'VINOD',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241227/8KSc/676e75150f47f80c8725cbb3/-473Wx593H-700987575-black-MODEL.jpg',
+                title:'Women Printed Silk Saree',
+                brand:'ZIKARAA',
+                price:4499
             },
             {
                 id:7,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240405/vLcW/6610263d05ac7d77bbf95d77/-473Wx593H-467232578-grey-MODEL.jpg',
-                title:'Pan set',
-                brand:'insa',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20250115/VGF8/67876201663dbe1c5fd96eb6/-473Wx593H-700857047-orange-MODEL.jpg',
+                title:'Women Designer Silk Saree',
+                brand:'SVARAA',
+                price:1123
             },
             {
                 id:8,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240822/HDRo/66c713946f60443f311f118d/-473Wx593H-700310690-blue-MODEL.jpg',
-                title:'Oven plot',
-                brand:'Swis',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240723/spyz/669fb05a6f60443f319c0f5f/-473Wx593H-700221614-lime-MODEL.jpg',
+                title:'Women Woven Saree Border',
+                brand:'MORLY',
+                price:549
             },
             {
                 id:9,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240715/l3KC/66954e9f6f60443f313e75ed/-473Wx593H-700191306-red-MODEL.jpg',
-                title:'Alluminium pans',
-                brand:'Syss',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241218/6XMx/6762f0750f47f80c870c01bb/-473Wx593H-700943427-yellow-MODEL.jpg',
+                title:'Women Traditional Saree',
+                brand:'PEACHMODE',
+                price:479
             },
             {
                 id:10,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/x6jP/663e173d16fd2c6e6afaeae0/-473Wx593H-467241709-black-MODEL.jpg',
-                title:'Forza Pre-Seasoned Pan 2.5L',
-                brand:'Kyra',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20240911/q2kO/66e15e5e6f60443f316ef8b7/-473Wx593H-700405970-black-MODEL.jpg',
+                title:'Women Woven Saree Border',
+                brand:'GAJGAJRA',
+                price:1400
             },
             {
                 id:11,
-                url:'https://assets.ajio.com/medias/sys_master/root/20240510/ZCZg/663e170d16fd2c6e6afae460/-473Wx593H-467210333-grey-MODEL.jpg',
-                title:'Granite Non-Stick Dosa Tawa',
-                brand:'Prestige',
-                price:999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241114/QCeP/67362035260f9c41e8e1eecc/-473Wx593H-700187158-beige-MODEL.jpg',
+                title:'Women Kanjeevaram Saree',
+                brand:'STYLEELITE',
+                price:315
             },
             {
                 id:12,
-                url:'https://assets.ajio.com/medias/sys_master/root/20230803/Z0O0/64cb5a4ca9b42d15c988c1c5/-473Wx593H-466027668-brown-MODEL.jpg',
-                title:'Wooden holder',
-                brand:'Colgate',
-                price:1999
+                url:'https://assets.ajio.com/medias/sys_master/root/20241227/qXkA/676e755ac148fa1b3063e553/-473Wx593H-700987575-blue-MODEL.jpg',
+                title:'Women Printed Silk Saree',
+                brand:'ZIKARAA',
+                price:3000
+            },
+            {
+                id:13,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241003/iDGe/66fe8a18f9b8ef490b900786/-473Wx593H-700527432-green-MODEL.jpg',
+                title:'Women Floral Saree Border',
+                brand:'VILLAGIUS',
+                price:500
+            },
+            {
+                id:14,
+                url:'https://assets.ajio.com/medias/sys_master/root/20241223/HRpT/676892240f47f80c8718f2f0/-473Wx593H-700760593-white-MODEL.jpg',
+                title:'Women Embroidery Saree',
+                brand:'KHUSHI CREATION',
+                price:599
+            },
+            {
+                id:15,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240611/WagA/6667b51105ac7d77bbd0536f/-473Wx593H-700019007-white-MODEL.jpg',
+                title:'Women Banarasi Silk Saree',
+                brand:'STYLEELITE',
+                price:1000
+            },
+            {
+                id:16,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240801/i9jc/66aab96d1d763220fa5261d6/-473Wx593H-700158156-purple-MODEL.jpg',
+                title:'Women Floral Woven Saree',
+                brand:'ZIKARAA',
+                price:1300
+            },
+            {
+                id:17,
+                url:'https://assets.ajio.com/medias/sys_master/root/20240905/EqYG/66d9b9656f60443f315a093f/-473Wx593H-700259427-blue-MODEL.jpg',
+                title:'Women Ikat Print Saree',
+                brand:'AHIKA',
+                price:2000
+            },
+            {
+                id:18,
+                url:'https://assets.ajio.com/medias/sys_master/root/20231116/JqBP/6555c881afa4cf41f58c2cc4/-473Wx593H-466797115-purple-MODEL.jpg',
+                title:'Printed Saree Contrast Border',
+                brand:'MIRCHI FASHION',
+                price:700
             }
         ];
         function viewProduct(productId) {
             let selectedProduct = products.find(p => p.id === productId);
-            localStorage.setItem('source', 'kitchen');
+            localStorage.setItem('source', 'women-sarees');
             localStorage.setItem('selectedProduct', JSON.stringify(selectedProduct));
             window.location.href = 'products.html'; // Redirect to product details page
         }
